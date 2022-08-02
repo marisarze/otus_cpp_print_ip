@@ -28,16 +28,16 @@ void print_ip(std::string&& input)
 }
 
 
-template <typename T>
-void print_ip(T&& input)
-{
-    for(auto it=input.begin();it!=input.end();it++){
-        if (it != input.begin())
-        {
-            std::cout << ".";
-        }
-        std::cout << *it;
-    }
-    std::cout << std::endl;
-}
+// template <typename T>
+// void print_ip(T&& input)
+// {
+//     for(auto it=input.begin();it!=input.end();it++){
+//         if (it != input.begin())
+//         {
+//             std::cout << ".";
+//         }
+//         std::cout << *it;
+//     }
+//     std::cout << std::endl;
+// }
 
