@@ -17,14 +17,14 @@ void print_ip(T&& input)
         natural = natural >> 8;
     }
     print_ip(std::move(temp));
-};
+}
 
 
 template <typename T>
 void print_ip(T&& input)
 {
     std::cout << input << std::endl;
-};
+}
 
 
 template <typename T>
@@ -38,5 +38,5 @@ void print_ip(T&& input)
         std::cout << *it;
     }
     std::cout << std::endl;
-};
+}
 
