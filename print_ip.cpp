@@ -9,7 +9,7 @@ void print_ip(T&& input)
     auto natural = (unsigned)input;
     std::vector <std::string> temp;
     auto it = temp.begin();
-    auto mem_size = size_of(T);
+    auto mem_size = sizeof(natural);
     decltype(natural) mask{255};
     for (int i=0;i<mem_size;i++)
     {   
