@@ -22,14 +22,14 @@ void print_ip(T&& input)
 
 
 template <typename T>
-void print_ip(std::string&& string)
+void print_ip(std::string&& input)
 {
     std::cout << input << std::endl;
 }
 
 
 template <typename T>
-void print_ip(T&& container)
+void print_ip(T&& input)
 {
     for(auto it=input.begin();it!=input.end();it++){
         if (it != input.begin())
