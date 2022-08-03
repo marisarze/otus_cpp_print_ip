@@ -22,7 +22,7 @@ void print_ip(T&& input)
 
 
 template <typename T>
-void print_ip(std::string&& input)
+void print_ip(const char input[])
 {
     std::cout << input << std::endl;
 }
