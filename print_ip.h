@@ -2,12 +2,13 @@
 #include <string>
 
 template <typename T>
-void print_ip(T&& input);
+typename std::enable_if<std::is_integral<T>::value, T>::type 
+print_ip(T&& input)
 
 
 template <typename T>
-void print_ip(const char input[]);
+void print_ip(T&& input)
 
 
-// template <typename T>
-// void print_ip(T&& input);
+template <typename T>
+void print_ip(T&& input);
