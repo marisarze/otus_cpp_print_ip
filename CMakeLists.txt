@@ -18,16 +18,16 @@ target_include_directories(print_ip
     PRIVATE "${CMAKE_CURRENT_BINARY_DIR}"
 )
 
-#add_subdirectory(tests)
-# if (MSVC)
-#     target_compile_options(print_ip PRIVATE
-#         /W4
-#     )
-# else ()
-#     target_compile_options(print_ip PRIVATE
-#         -Wall -Wextra -pedantic -Werror
-#     )
-# endif()
+add_subdirectory(tests)
+if (MSVC)
+    target_compile_options(print_ip PRIVATE
+        /W4
+    )
+else ()
+    target_compile_options(print_ip PRIVATE
+        -Wall -Wextra -pedantic -Werror
+    )
+endif()
 
 
 

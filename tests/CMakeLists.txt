@@ -18,7 +18,7 @@ if (NOT (TARGET gtest AND TARGET gtest_main))
     message(FATAL_ERROR "gtest and gtest_main targets NOT found")
 endif()
 
-add_executable(test_print_ip test_print_ip.cpp ../print_ip.cpp)
+add_executable(test_print_ip test_print_ip.cpp)
 
 target_link_libraries(test_print_ip gtest gtest_main)
 
