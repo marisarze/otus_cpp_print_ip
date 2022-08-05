@@ -20,7 +20,7 @@ jobs:
       - run: tests/test_print_ip
       - run: ./print_ip
       - run: cpack
-      - run: dpkg -c prin_ip-0.0.${{ github.run_number }}-Linux.deb
+      - run: dpkg -c print_ip-0.0.${{ github.run_number }}-Linux.deb
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
