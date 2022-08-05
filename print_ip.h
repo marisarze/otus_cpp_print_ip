@@ -115,7 +115,7 @@ template <typename T>
 typename std::enable_if<is_uniform_tuple<T>::value, void>::type
 print_ip(T&& input)
 {
-    std::string content = "";
+    std::string content = "\n";
     utility_struct<T, (std::tuple_size<T>::value)-1>::fill_content(input, content);
     std::cout << content;
 }
