@@ -25,9 +25,11 @@ jobs:
       - name: Prepare Doxyfile
         run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
 
-      - uses: DenverCoder1/doxygen-github-pages-action@v1.1.0
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          folder: site
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: Create Release
         id: create_release
