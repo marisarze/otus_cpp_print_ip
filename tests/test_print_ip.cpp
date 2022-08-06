@@ -33,4 +33,4 @@ TEST(TestSimple, TestPositive){
     auto result = buffer.str();
     std::cout.rdbuf(backup);
     EXPECT_EQ(result, expected);
-};
+}
