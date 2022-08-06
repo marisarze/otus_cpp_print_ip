@@ -24,23 +24,10 @@ jobs:
 
       - name: Prepare Doxyfile
         run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
-      
-      - name: Doxygen Action
-        uses: mattnotmitt/doxygen-action@v1.1.0
-        with:
-            doxyfile-path: ./Doxyfile
-            working-directory: .
-    
-    # Deploy the HTML documentation to GitHub Pages
-      - name: GH Pages Deployment
-        uses: peaceiris/actions-gh-pages@v3
+
+      - uses: DenverCoder1/doxygen-github-pages-action@v1.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./doc/html/
-          enable_jekyll: true
-          allow_empty_commit: false
-          force_orphan: true
-          publish_branch: gh-pages
 
       - name: Create Release
         id: create_release
@@ -62,5 +49,9 @@ jobs:
           asset_path: ./print_ip-0.0.${{ github.run_number }}-Linux.deb
           asset_name: print_ip-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
+
+      
+
+      
 
       
