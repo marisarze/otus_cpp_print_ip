@@ -21,6 +21,24 @@ jobs:
       - run: ./print_ip
       - run: cpack
       - run: dpkg -c print_ip-0.0.${{ github.run_number }}-Linux.deb
+
+      - name: Prepare Doxyfile
+        run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
+      
+      - name: Doxygen Action
+        uses: mattnotmitt/doxygen-action@v1.1.0
+        with:
+            doxyfile-path: ./Doxyfile
+            working-directory: .
+    
+    # Deploy the HTML documentation to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: docs
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -42,19 +60,4 @@ jobs:
           asset_name: print_ip-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
 
-      - name: Prepare Doxyfile
-        run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
       
-      - name: Doxygen Action
-        uses: mattnotmitt/doxygen-action@v1.1.0
-        with:
-            doxyfile-path: ./Doxyfile
-            working-directory: .
-    
-    # Deploy the HTML documentation to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: docs
