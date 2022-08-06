@@ -109,8 +109,6 @@ struct utility_struct<T, 0>
 };
 
 
-
-
 template <typename T>
 typename std::enable_if<is_uniform_tuple<T>::value, void>::type
 print_ip(T&& input)

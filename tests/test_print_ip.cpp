@@ -1,4 +1,4 @@
-#include "../print_ip.h"
+#include "../print_ip.cpp"
 #include "gtest/gtest.h"
 #include <iostream>
 #include <sstream>
