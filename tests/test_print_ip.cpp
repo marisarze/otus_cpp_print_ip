@@ -4,7 +4,7 @@
 #include <sstream>
 #include <string>
 
-TEST(TestSimple, TestGetIpPool){
+TEST(TestSimple, TestPositive){
 
     std::stringstream buffer;
     auto backup = std::cout.rdbuf();
@@ -33,4 +33,4 @@ TEST(TestSimple, TestGetIpPool){
     auto result = buffer.str();
     std::cout.rdbuf(backup);
     EXPECT_EQ(result, expected);
-}
+};
