@@ -45,9 +45,9 @@ jobs:
           asset_content_type: application/vnd.debian.binary-package
 
       - name: Prepare Doxyfile
-        run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
-        run: Doxygen -g Doxyfile
-        run: ls -aq
+      - run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
+      - run: Doxygen -g Doxyfile
+      - run: ls -aq
 
       # store the doc files 
       - name: Doxygen Action C++
