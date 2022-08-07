@@ -26,7 +26,7 @@ jobs:
       - name: Prepare Doxyfile
         run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
 
-      # store the doc files
+      # store the doc files 
       - name: Doxygen Action C++
         uses: mattnotmitt/doxygen-action@v1.3.1
         with:
