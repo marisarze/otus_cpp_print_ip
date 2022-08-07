@@ -5,7 +5,7 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 project(print_ip VERSION ${PROJECT_VESRION})
 
-
+configure_file(version.h.in version.h)
 add_executable(print_ip main.cpp)
 
 set_target_properties(print_ip
