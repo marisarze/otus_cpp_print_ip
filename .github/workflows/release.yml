@@ -50,11 +50,11 @@ jobs:
       - run: ls -aq
 
       # store the doc files 
-      - name: Doxygen Action C++
-        uses: mattnotmitt/doxygen-action@v1.9.4
-        with:
-          working-directory: .
-          doxyfile-path: ./Doxyfile
+      # - name: Doxygen Action C++
+      #   uses: mattnotmitt/doxygen-action@v1.9.4
+      #   with:
+      #     working-directory: .
+      #     doxyfile-path: ./Doxyfile
 
       - run: ls -aq
 
