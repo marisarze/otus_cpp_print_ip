@@ -54,7 +54,7 @@ jobs:
         with:
           name: doc-files
           path: docDir
-        # add, commit and push to gh-pages
+        # add, commit and push to gh-pages 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
