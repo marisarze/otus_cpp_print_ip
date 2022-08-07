@@ -27,7 +27,7 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1.3.1
         with:
           working-directory: '.'
-          doxyfile-path: 'doc/doxygen/DoxyfileCC'
+          doxyfile-path: '.'
 
       - name: Prepare Doxyfile
         run: ls -aq
