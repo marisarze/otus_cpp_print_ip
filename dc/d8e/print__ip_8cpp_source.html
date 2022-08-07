@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">otus_cpp_print_ip
-   &#160;<span id="projectnumber">0.0.96</span>
+   &#160;<span id="projectnumber">0.0.97</span>
    </div>
    <div id="projectbrief">SFINAE based print_ip function overloading for different input ip-structures</div>
   </td>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('dc/d8e/print__ip_8cpp_source.html','..
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> * </span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment"> * @tparam Types parameter pack for creating tuple</span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... <a class="code" href="../../d0/d75/namespacetesting.html#a29eec4c1aba59e52881d8eb38cece83c">Types</a>&gt;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Types&gt;</div>
 <div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="../../db/d0b/structis__tuple_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html">  175</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../da/d55/structis__tuple.html">is_tuple</a>&lt;std::tuple&lt;Types...&gt;&gt;: std::true_type {};</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"></span> </div>
@@ -271,9 +271,9 @@ $(document).ready(function(){initNavTree('dc/d8e/print__ip_8cpp_source.html','..
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> * </span></div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> * @tparam Types </span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... <a class="code" href="../../d0/d75/namespacetesting.html#a29eec4c1aba59e52881d8eb38cece83c">Types</a>&gt;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Types&gt;</div>
 <div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="../../de/d4a/structis__uniform__tuple_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html">  197</a></span>&#160;<span class="keyword">struct </span><a class="code" href="../../d6/d01/structis__uniform__tuple.html">is_uniform_tuple</a>&lt;std::tuple&lt;Types...&gt;&gt;: std::true_type {</div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="../../de/d4a/structis__uniform__tuple_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html#a57eb4ec88349ecf5db7db524c6c67b48">  198</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = <a class="code" href="../../d2/dd8/structis__all__same.html">is_all_same</a>&lt;<a class="code" href="../../d0/d75/namespacetesting.html#a29eec4c1aba59e52881d8eb38cece83c">Types</a>...&gt;::value;</div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="../../de/d4a/structis__uniform__tuple_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html#a57eb4ec88349ecf5db7db524c6c67b48">  198</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = <a class="code" href="../../d2/dd8/structis__all__same.html">is_all_same</a>&lt;Types...&gt;::value;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
@@ -343,7 +343,6 @@ $(document).ready(function(){initNavTree('dc/d8e/print__ip_8cpp_source.html','..
 <div class="ttc" id="astructis__tuple_html"><div class="ttname"><a href="../../da/d55/structis__tuple.html">is_tuple</a></div><div class="ttdoc">helper structure for type checking as a tuple in templates (common variant)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00164">print_ip.cpp:164</a></div></div>
 <div class="ttc" id="astructutility__struct_3_01_t_00_010_01_4_html_aa7c43571569e1ee33d6a9cf6baff0d38"><div class="ttname"><a href="../../d2/d49/structutility__struct_3_01_t_00_010_01_4.html#aa7c43571569e1ee33d6a9cf6baff0d38">utility_struct&lt; T, 0 &gt;::fill_content</a></div><div class="ttdeci">static void fill_content(T &amp;&amp;input, std::string &amp;content)</div><div class="ttdoc">main member function to fill the print string Elements are combined through the delimiter &quot;....</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00241">print_ip.cpp:241</a></div></div>
 <div class="ttc" id="astructis__list_html"><div class="ttname"><a href="../../d4/db6/structis__list.html">is_list</a></div><div class="ttdoc">helper structure for type checking as a list in templates (extended structure)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00097">print_ip.cpp:97</a></div></div>
-<div class="ttc" id="anamespacetesting_html_a29eec4c1aba59e52881d8eb38cece83c"><div class="ttname"><a href="../../d0/d75/namespacetesting.html#a29eec4c1aba59e52881d8eb38cece83c">testing::Types</a></div><div class="ttdeci">internal::ProxyTypeList&lt; Ts... &gt; Types</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d97/gtest-type-util_8h_source.html#l00179">gtest-type-util.h:179</a></div></div>
 <div class="ttc" id="astructis__all__same_html"><div class="ttname"><a href="../../d2/dd8/structis__all__same.html">is_all_same</a></div><div class="ttdoc">helper structure for checking the same type in template input (partial specialization)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00138">print_ip.cpp:138</a></div></div>
 <div class="ttc" id="astructis__all__same_html_aa55fb475da2c4a775781852629e3a1ea"><div class="ttname"><a href="../../d2/dd8/structis__all__same.html#aa55fb475da2c4a775781852629e3a1ea">is_all_same::value</a></div><div class="ttdeci">static constexpr bool value</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00139">print_ip.cpp:139</a></div></div>
 <div class="ttc" id="astructis__uniform__tuple_html"><div class="ttname"><a href="../../d6/d01/structis__uniform__tuple.html">is_uniform_tuple</a></div><div class="ttdoc">helper structure for type checking as a uniform tuple (common variant) this structure has bool member...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00186">print_ip.cpp:186</a></div></div>
@@ -355,7 +354,7 @@ $(document).ready(function(){initNavTree('dc/d8e/print__ip_8cpp_source.html','..
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d8e/print__ip_8cpp.html">print_ip.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 13:04:16 for otus_cpp_print_ip by
+    <li class="footer">Generated on Sun Aug 7 2022 13:06:45 for otus_cpp_print_ip by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

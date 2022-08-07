@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">otus_cpp_print_ip
-   &#160;<span id="projectnumber">0.0.96</span>
+   &#160;<span id="projectnumber">0.0.97</span>
    </div>
    <div id="projectbrief">SFINAE based print_ip function overloading for different input ip-structures</div>
   </td>
@@ -79,7 +79,7 @@ $(document).ready(function(){initNavTree('d5/d3a/test__print__ip_8cpp.html','../
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">../print_ip.cpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d8/d73/gtest_8h_source.html">gtest/gtest.h</a>&quot;</code><br />
+<code>#include &quot;gtest/gtest.h&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
@@ -155,22 +155,21 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">auto</span> result = buffer.str();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout.rdbuf(backup);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../d8/d73/gtest_8h.html#a4159019abda84f5366acdb7604ff220a">EXPECT_EQ</a>(result, expected);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    EXPECT_EQ(result, expected);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d73/gtest_8h_source.html#l02024">EXPECT_EQ</a>, and <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00030">print_ip()</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00030">print_ip()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agtest_8h_html_a4159019abda84f5366acdb7604ff220a"><div class="ttname"><a href="../../d8/d73/gtest_8h.html#a4159019abda84f5366acdb7604ff220a">EXPECT_EQ</a></div><div class="ttdeci">#define EXPECT_EQ(val1, val2)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d73/gtest_8h_source.html#l02024">gtest.h:2024</a></div></div>
 <div class="ttc" id="aprint__ip_8cpp_html_ac39fc89299ac9117dd5e0aea703ef7cc"><div class="ttname"><a href="../../dc/d8e/print__ip_8cpp.html#ac39fc89299ac9117dd5e0aea703ef7cc">print_ip</a></div><div class="ttdeci">std::enable_if&lt; std::is_integral&lt; T &gt;::value, void &gt;::type print_ip(T &amp;&amp;input)</div><div class="ttdoc">the function of printing ip addresses implemented through SFINAE, presented as an integral (long int,...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00030">print_ip.cpp:30</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="../../d5/d3a/test__print__ip_8cpp.html">test_print_ip.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 13:04:16 for otus_cpp_print_ip by
+    <li class="footer">Generated on Sun Aug 7 2022 13:06:45 for otus_cpp_print_ip by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

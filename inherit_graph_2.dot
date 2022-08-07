@@ -5,7 +5,13 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Interface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d95/class_interface.html",tooltip=" "];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="Mock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d46/class_mock.html",tooltip=" "];
+  Node3 [label="true_type",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="is_list\< std::list\l\< X \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d60/structis__list_3_01std_1_1list_3_01_x_01_4_01_4.html",tooltip="helper structure for type checking as a list in templates (reduced structure)"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="is_tuple\< std::tuple\l\< Types... \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d0b/structis__tuple_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html",tooltip="helper structure for type checking as a tuple in templates (reduced variant) this structure has bool ..."];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="is_uniform_tuple\< std\l::tuple\< Types... \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d4a/structis__uniform__tuple_3_01std_1_1tuple_3_01_types_8_8_8_01_4_01_4.html",tooltip="helper structure for type checking as a uniform tuple (partial variant) this structure has bool membe..."];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="is_vector\< std::vector\l\< X \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d98/structis__vector_3_01std_1_1vector_3_01_x_01_4_01_4.html",tooltip="helper structure for type checking as a vector in templates (reduced structure)"];
 }
