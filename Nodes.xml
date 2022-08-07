@@ -436,6 +436,17 @@
              </Node>
             </Subnodes>
            </Node>
+           <Node>
+            <Name>version.h</Name>
+            <Path>df/dfc/version_8h.html</Path>
+            <Subnodes>
+             <Node>
+              <Name>PROJECT_VERSION_PATCH</Name>
+              <Path>df/dfc/version_8h.html</Path>
+              <Anchor>a4a5fc96a4bdd7d68ed99ccce9ca2e77e</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
           </Subnodes>
          </Node>
          <Node>
