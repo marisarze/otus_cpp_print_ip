@@ -38,7 +38,7 @@ jobs:
           id: tidy
           uses: cicirello/javadoc-cleanup@v1
           with:
-          path-to-root: doc/javadoc
+            path-to-root: doc/javadoc
 
         - name: Prepare Doxyfile
           run: ls -aq
