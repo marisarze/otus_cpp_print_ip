@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="is_all_same\<... \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dd8/structis__all__same.html",tooltip="helper structure for checking the same type in template input (partial specialization)"];
+}
