@@ -6,7 +6,8 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 project(print_ip VERSION ${PROJECT_VESRION})
 
 
-
+option(INSTALL_GMOCK "Install Googletest's GMock?" OFF)
+option(INSTALL_GTEST "Install Googletest's GTest?" OFF)
 add_executable(print_ip main.cpp)
 
 set_target_properties(print_ip

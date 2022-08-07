@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 project(test_print_ip)
 
 
-option(INSTALL_GMOCK "Install Googletest's GMock?" OFF)
-option(INSTALL_GTEST "Install Googletest's GTest?" OFF)
+
 include(FetchContent)
 FetchContent_Declare(
         googletest
