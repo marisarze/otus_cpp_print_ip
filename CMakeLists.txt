@@ -13,7 +13,7 @@ set_target_properties(print_ip
     CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
-target_include_directories(test_version
+target_include_directories(print_ip
     PRIVATE "${CMAKE_BINARY_DIR}"
 )
 
