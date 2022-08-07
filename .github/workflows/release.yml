@@ -48,6 +48,7 @@ jobs:
       - run: cat Doxyfile
       - run: mkdir docs; cd docs; mkdir html;
       - run: touch docs/html/.nojekyll
+      - run: sudo apt-get install doxygen -y
       - run: doxygen Doxyfile 
       
       - name: Deploy 🚀
