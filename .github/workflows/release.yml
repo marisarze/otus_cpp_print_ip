@@ -51,8 +51,6 @@ jobs:
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: . # The folder the action should deploy.
 
       # - uses: DenverCoder1/doxygen-github-pages-action@v1.1.0
       #   with:
