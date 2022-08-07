@@ -201,105 +201,6 @@
           <Path>files.html</Path>
           <Subnodes>
            <Node>
-            <Name>CMakeFiles</Name>
-            <Path>dir_017ad5e908c41501f6a06b5119b37293.html</Path>
-            <Subnodes>
-             <Node>
-              <Name>3.23.3</Name>
-              <Path>dir_0aa35165a9a7da7accbf6f3eec36856a.html</Path>
-              <Subnodes>
-               <Node>
-                <Name>CompilerIdCXX</Name>
-                <Path>dir_f74b6eaad660fd67b715716fcbb1f7b7.html</Path>
-                <Subnodes>
-                 <Node>
-                  <Name>CMakeCXXCompilerId.cpp</Name>
-                  <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                  <Subnodes>
-                   <Node>
-                    <Name>__has_include</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>ae5510d82e4946f1656f4969911c54736</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>ARCHITECTURE_ID</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>aba35d0d200deaeb06aee95ca297acb28</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>COMPILER_ID</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a81dee0709ded976b2e0319239f72d174</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>CXX_STD</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a34cc889e576a1ae6c84ae9e0a851ba21</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>DEC</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>ad1280362da42492bbc11aa78cbf776ad</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>HEX</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a46d5d95daa1bef867bd0179594310ed5</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>PLATFORM_ID</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>adbc5372f40838899018fadbc89bd588b</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>STRINGIFY</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a43e1cad902b6477bec893cb6430bd6c8</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>STRINGIFY_HELPER</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a2ae9b72bb13abaabfcf2ee0ba7d3fa1d</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>main</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a0ddf1224851353fc92bfbff6f499fa97</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>info_arch</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a59647e99d304ed33b15cb284c27ed391</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>info_compiler</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a4b0efeb7a5d59313986b3a0390f050f6</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>info_language_extensions_default</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a0f46a8a39e09d9b803c4766904fd7e99</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>info_language_standard_default</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a4607cccf070750927b458473ca82c090</Anchor>
-                   </Node>
-                   <Node>
-                    <Name>info_platform</Name>
-                    <Path>d3/d66/_c_make_c_x_x_compiler_id_8cpp.html</Path>
-                    <Anchor>a2321403dee54ee23f0c2fa849c60f7d4</Anchor>
-                   </Node>
-                  </Subnodes>
-                 </Node>
-                </Subnodes>
-               </Node>
-              </Subnodes>
-             </Node>
-            </Subnodes>
-           </Node>
-           <Node>
             <Name>tests</Name>
             <Path>dir_59425e443f801f1f2fd8bbe4959a3ccf.html</Path>
             <Subnodes>
@@ -449,14 +350,6 @@
            <Node>
             <Name>Functions</Name>
             <Path>globals_func.html</Path>
-           </Node>
-           <Node>
-            <Name>Variables</Name>
-            <Path>globals_vars.html</Path>
-           </Node>
-           <Node>
-            <Name>Macros</Name>
-            <Path>globals_defs.html</Path>
            </Node>
           </Subnodes>
          </Node>
