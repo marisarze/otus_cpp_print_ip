@@ -48,12 +48,12 @@ jobs:
           ref: gh-pages
           lfs: true
           token: ${{ secrets.GITHUB_TOKEN }}
-
+      - run: ls -aq
       - name: Download Output Directory
         uses: actions/download-artifact@v2
         with:
           name: doc-files
-          path: docDir
+          path: doc
         # add, commit and push to gh-pages
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
