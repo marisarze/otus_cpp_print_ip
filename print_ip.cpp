@@ -1,3 +1,14 @@
+/**
+ * @file print_ip.cpp
+ * @author marisarze (you@domain.com)
+ * @brief functions for printing ip
+ * @version 0.1
+ * @date 2022-08-07
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #pragma once
 #include <iostream>
 #include <vector>
