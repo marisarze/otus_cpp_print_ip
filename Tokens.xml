@@ -216,16 +216,6 @@
   </Token>
   <Token>
     <TokenIdentifier>
-      <Name>PROJECT_VERSION_PATCH</Name>
-      <APILanguage>unknown</APILanguage>
-      <Type>macro</Type>
-    </TokenIdentifier>
-    <Path>df/dfc/version_8h.html</Path>
-    <Anchor>a4a5fc96a4bdd7d68ed99ccce9ca2e77e</Anchor>
-    <DeclaredIn>version.h</DeclaredIn>
-  </Token>
-  <Token>
-    <TokenIdentifier>
       <Name>md_README</Name>
       <APILanguage>markdown</APILanguage>
     </TokenIdentifier>

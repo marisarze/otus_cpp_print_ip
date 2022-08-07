@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">otus_cpp_print_ip
-   &#160;<span id="projectnumber">0.0.101</span>
+   &#160;<span id="projectnumber">0.0.102</span>
    </div>
    <div id="projectbrief">SFINAE based print_ip function overloading for different input ip-structures</div>
   </td>
@@ -88,7 +88,6 @@ $(document).ready(function(){initNavTree('dc/d8e/print__ip_8cpp.html','../../');
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;list&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dfc/version_8h_source.html">version.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for print_ip.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -169,7 +168,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>functions for printing ip </p>
 <dl class="section author"><dt>Author</dt><dd>marisarze (<a href="#" onclick="location.href='mai'+'lto:'+'you'+'@d'+'oma'+'in'+'.co'+'m'; return false;">you@d<span style="display: none;">.nosp@m.</span>omai<span style="display: none;">.nosp@m.</span>n.com</a>) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>PROJECT_VERSION_PATCH </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.0.102 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2022-08-07</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
 
@@ -209,27 +208,27 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00034">34</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> natural = (uint64_t)input;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::vector &lt;decltype(natural)&gt; temp;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> mem_size = <span class="keyword">sizeof</span>(input);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">auto</span> mask = decltype(natural)(255);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;mem_size;i++)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {   </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        temp.insert(temp.begin(), natural &amp; mask);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        natural = natural &gt;&gt; 8;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = temp.begin();it != temp.end(); ++it){</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">if</span> (it != temp.begin())</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::cout &lt;&lt; *it;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">auto</span> natural = (uint64_t)input;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::vector &lt;decltype(natural)&gt; temp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> mem_size = <span class="keyword">sizeof</span>(input);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span> mask = decltype(natural)(255);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0;i&lt;mem_size;i++)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {   </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        temp.insert(temp.begin(), natural &amp; mask);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        natural = natural &gt;&gt; 8;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = temp.begin();it != temp.end(); ++it){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (it != temp.begin())</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::cout &lt;&lt; *it;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp_source.html#l00004">main()</a>, and <a class="el" href="../../d5/d3a/test__print__ip_8cpp_source.html#l00007">TEST()</a>.</p>
 
@@ -268,10 +267,10 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00066">66</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::cout &lt;&lt; input &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::cout &lt;&lt; input &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -308,17 +307,17 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00123">123</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it=input.begin();it!=input.end();it++){</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span> (it != input.begin())</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        std::cout &lt;&lt; *it;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it=input.begin();it!=input.end();it++){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span> (it != input.begin())</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        std::cout &lt;&lt; *it;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -355,23 +354,23 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00261">261</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    std::string content = <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="../../da/d88/structutility__struct.html">utility_struct</a>&lt;T, (std::tuple_size&lt;T&gt;::value)-1&gt;::fill_content(std::forward&lt;T&gt;(input), content);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    std::cout &lt;&lt; content;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00257">257</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    std::string content = <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="../../da/d88/structutility__struct.html">utility_struct</a>&lt;T, (std::tuple_size&lt;T&gt;::value)-1&gt;::fill_content(std::forward&lt;T&gt;(input), content);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    std::cout &lt;&lt; content;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructutility__struct_html"><div class="ttname"><a href="../../da/d88/structutility__struct.html">utility_struct</a></div><div class="ttdoc">auxiliary recursive structure to combine the inside of the structure into one line (common variant)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00214">print_ip.cpp:214</a></div></div>
+<div class="ttc" id="astructutility__struct_html"><div class="ttname"><a href="../../da/d88/structutility__struct.html">utility_struct</a></div><div class="ttdoc">auxiliary recursive structure to combine the inside of the structure into one line (common variant)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00210">print_ip.cpp:210</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dc/d8e/print__ip_8cpp.html">print_ip.cpp</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:22:51 for otus_cpp_print_ip by
+    <li class="footer">Generated on Sun Aug 7 2022 16:32:11 for otus_cpp_print_ip by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

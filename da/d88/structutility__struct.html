@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">otus_cpp_print_ip
-   &#160;<span id="projectnumber">0.0.101</span>
+   &#160;<span id="projectnumber">0.0.102</span>
    </div>
    <div id="projectbrief">SFINAE based print_ip function overloading for different input ip-structures</div>
   </td>
@@ -110,7 +110,7 @@ struct utility_struct&lt; T, I &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00210">210</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae8d45788b2627418a3742edd14661e29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8d45788b2627418a3742edd14661e29">&#9670;&nbsp;</a></span>fill_content()</h2>
@@ -157,11 +157,11 @@ template&lt;typename T , std::size_t I&gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00223">223</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                           {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        content = <span class="stringliteral">&quot;.&quot;</span>+std::to_string(std::get&lt;I&gt;(input)) + content;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <a class="code" href="../../da/d88/structutility__struct.html#ae8d45788b2627418a3742edd14661e29">utility_struct&lt;T, I-1&gt;::fill_content</a>(std::forward&lt;T&gt;(input), content);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html#l00219">219</a> of file <a class="el" href="../../dc/d8e/print__ip_8cpp_source.html">print_ip.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                                                           {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        content = <span class="stringliteral">&quot;.&quot;</span>+std::to_string(std::get&lt;I&gt;(input)) + content;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="../../da/d88/structutility__struct.html#ae8d45788b2627418a3742edd14661e29">utility_struct&lt;T, I-1&gt;::fill_content</a>(std::forward&lt;T&gt;(input), content);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -170,12 +170,12 @@ template&lt;typename T , std::size_t I&gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructutility__struct_html_ae8d45788b2627418a3742edd14661e29"><div class="ttname"><a href="../../da/d88/structutility__struct.html#ae8d45788b2627418a3742edd14661e29">utility_struct::fill_content</a></div><div class="ttdeci">static void fill_content(T &amp;&amp;input, std::string &amp;content)</div><div class="ttdoc">main member function to fill the print string Elements are combined through the delimiter &quot;....</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00223">print_ip.cpp:223</a></div></div>
+<div class="ttc" id="astructutility__struct_html_ae8d45788b2627418a3742edd14661e29"><div class="ttname"><a href="../../da/d88/structutility__struct.html#ae8d45788b2627418a3742edd14661e29">utility_struct::fill_content</a></div><div class="ttdeci">static void fill_content(T &amp;&amp;input, std::string &amp;content)</div><div class="ttdoc">main member function to fill the print string Elements are combined through the delimiter &quot;....</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d8e/print__ip_8cpp_source.html#l00219">print_ip.cpp:219</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d88/structutility__struct.html">utility_struct</a></li>
-    <li class="footer">Generated on Sun Aug 7 2022 16:22:51 for otus_cpp_print_ip by
+    <li class="footer">Generated on Sun Aug 7 2022 16:32:11 for otus_cpp_print_ip by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
