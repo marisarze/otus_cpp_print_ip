@@ -1,0 +1,15 @@
+digraph "_deps/googletest-src/googlemock/include" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9f752931467437595e750a893adae36d {
+    graph [ bgcolor="#ddddee", pencolor="black", label="googlemock" fontname="Helvetica", fontsize="10", URL="dir_9f752931467437595e750a893adae36d.html"]
+  subgraph clusterdir_3dec950ecf48919712294e90ed651c0d {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_3dec950ecf48919712294e90ed651c0d.html"];
+    dir_3dec950ecf48919712294e90ed651c0d [shape=plaintext label="include"];
+    dir_d933f196553e404b1d5e50d5328f3597 [shape=box label="gmock" color="red" fillcolor="white" style="filled" URL="dir_d933f196553e404b1d5e50d5328f3597.html"];
+  }
+  }
+  dir_22568a91a9e129076b6e99e80c459363 [shape=box label="googletest" fillcolor="white" style="filled" color="red" URL="dir_22568a91a9e129076b6e99e80c459363.html"];
+  dir_d933f196553e404b1d5e50d5328f3597->dir_22568a91a9e129076b6e99e80c459363 [headlabel="5", labeldistance=1.5 headhref="dir_000006_000010.html"];
+}

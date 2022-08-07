@@ -1,0 +1,25 @@
+digraph "testing::TestResult"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{testing::TestResult\n|- death_test_count_\l- start_timestamp_\l- elapsed_time_\l|+ TestResult()\l+ ~TestResult()\l+ total_part_count()\l+ test_property_count()\l+ Passed()\l+ Skipped()\l+ Failed()\l+ HasFatalFailure()\l+ HasNonfatalFailure()\l+ elapsed_time()\l+ start_timestamp()\l+ GetTestPartResult()\l+ GetTestProperty()\l- test_part_results()\l- test_properties()\l- set_start_timestamp()\l- set_elapsed_time()\l- RecordProperty()\l- AddTestPartResult()\l- death_test_count()\l- increment_death_test\l_count()\l- ClearTestPartResults()\l- Clear()\l- GTEST_DISALLOW_COPY\l_AND_ASSIGN_()\l- ValidateTestProperty()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -test_properites_mutex_" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{testing::internal::\lMutex\n||+ Mutex()\l+ Lock()\l+ Unlock()\l+ AssertHeld()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d77/classtesting_1_1internal_1_1_mutex.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -test_properties_" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{std::vector\< testing\l::TestProperty \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{testing::TestProperty\n||+ TestProperty()\l+ key()\l+ value()\l+ SetValue()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d27/classtesting_1_1_test_property.html",tooltip=" "];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" -key_\n-value_" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{std::string\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{std::basic_string\<\l char \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node7 -> Node3 [dir="back",color="orange",fontsize="10",style="solid",label=" \< testing::TestProperty \>" ,fontname="Helvetica"];
+  Node7 [label="{std::vector\< T \>\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip="STL class."];
+  Node8 -> Node7 [color="grey25",fontsize="10",style="solid",label=" +elements" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{T\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -test_part_results_" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{std::vector\< TestPartResult \>\n|+ elements\l|}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node9 [dir="back",color="orange",fontsize="10",style="solid",label=" \< TestPartResult \>" ,fontname="Helvetica"];
+}
