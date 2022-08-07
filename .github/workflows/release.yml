@@ -24,19 +24,6 @@ jobs:
       - run: cpack
       - run: dpkg -c print_ip-0.0.${{ github.run_number }}-Linux.deb
 
-      - run: sed -i 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
-      - run: cat Doxyfile
-      - run: mkdir docs; cd docs; mkdir html;
-      - run: touch docs/html/.nojekyll
-      - run: sudo apt-get install doxygen -y
-      - run: doxygen Doxyfile
-      - run: ls -aq 
-      
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: docs/html
-
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
