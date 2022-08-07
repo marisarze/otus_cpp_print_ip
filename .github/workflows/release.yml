@@ -10,8 +10,6 @@ jobs:
   
   build_on_ubuntu:
     runs-on: ubuntu-latest
-    container:
-      options: --user root
     steps:
       - uses: actions/checkout@v2
         with:
@@ -49,7 +47,7 @@ jobs:
         with:
           ref: gh-pages
           lfs: true
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Download Output Directory
         uses: actions/download-artifact@v2
