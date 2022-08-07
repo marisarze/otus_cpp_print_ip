@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: doc-files
-          path: doc
+          path: .
           retention-days: 1
       - run: sudo chown -R $USER:$USER /home/runner/work/otus_cpp_print_ip/
       - name: Checkout the gh-pages branch
