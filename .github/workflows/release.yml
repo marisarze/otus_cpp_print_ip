@@ -46,6 +46,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           ref: gh-pages
+          lfs: true
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Download Output Directory
         uses: actions/download-artifact@v2
