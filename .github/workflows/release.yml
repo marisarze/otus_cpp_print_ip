@@ -47,7 +47,8 @@ jobs:
       - run: sed -i 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
       - run: cat Doxyfile
       - run: mkdir docs; cd docs; mkdir html;
-      - run: touch docs/html/.nojekyll 
+      - run: touch docs/html/.nojekyll
+      - run: doxygen Doxyfile 
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
