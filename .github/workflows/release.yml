@@ -44,7 +44,7 @@ jobs:
           asset_name: print_ip-0.0.${{ github.run_number }}-Linux.deb
           asset_content_type: application/vnd.debian.binary-package
 
-      
+      - run: sudo apt-install -y doxygen
       - run: sed 's/MY_PROJECT_VERSION/0.0.${{ github.run_number }}/' Doxyfile
       - run: Doxygen -g Doxyfile
       - run: ls -aq
